@@ -1,0 +1,251 @@
+/* Font imported */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
+
+/* Figma based stylesheet for Desktop with min-resolution: 1090px*/
+body {
+    margin: 0;
+    background: #F3F5FC;
+    font-family: 'Inter','Franklin Gothic Book';
+    font-style: normal;
+    font-weight: 400;
+}
+
+header {
+	height: 35px;
+    font-weight: 200;
+	color: #0A3871;
+}
+
+main {
+    position: absolute;
+    height: 90%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+	width: 100%;
+	height: 8%;
+
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 200;
+
+	color: #efefef;
+	background-color: #0A3871;
+	bottom: 0;
+}
+
+footer p {
+    font-size: 15px;
+    margin: 0.5rem 1rem;
+}
+
+/* ----- Alura Logo Frame ----- */
+.frameLogo {
+    display: flex;
+    padding: 0px;
+
+    position: fixed;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+/* Alura's Logo inside frame */
+.logo {
+    height: 47px;
+    width: 31px;
+    position: absolute;
+    left: 36.67%;
+    right: 37.43%;
+    top: 0%;
+    bottom: 0%;
+}
+
+/* ----- Buttons ----- */
+button {
+    padding: 24px;
+    gap: 8px;
+
+    width: 270px;
+    height: 67px;
+
+    font-size: 17px;
+    line-height: 19px;
+    text-align: center;
+}
+
+button.dark {
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    color: #FFFFFF;
+}
+
+button.light {
+    background: #F3F5FC;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    color: #0A3871;
+}
+
+/* Button's effect */
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+#btn-iniciar {
+    width: 300px;
+    height: 120px;
+    font-size: 22px;
+    line-height: 50px;
+    
+}
+
+/* Center Button's frame */
+.main-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ----- Text area ----- */
+textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    display: block;
+    margin-bottom: 4rem;
+}
+
+/* ----- Input Text ----- */
+.input-text {
+    font-family: 'Inter';
+    font-size: 30px;
+    line-height: 150%;
+
+    color: #0A3871;
+    background-color: #F3F5FC;
+}
+
+
+/* ----- Output Text ----- */
+.output-text {
+    width: 80%;
+    height: 65%;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+
+    color: #495057;
+}
+
+/* ----- Frame for advice message ----- */
+.advice-frame {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#img-alerta {
+    height: 15px;
+    width: 15px;
+}
+
+/* Advice message style */
+.advice {
+    font-size: 14px;
+    color: #55575a;
+    opacity: 0.8;
+    margin: 8px;
+}
+
+canvas {
+    display: block;
+    width: 545px;
+    height: 500px;
+    margin-bottom: 1rem;
+    background-color: white;
+}
+
+@media screen and (max-width: 1089px) {
+    body {
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    header {
+        font-size: 10px;
+    }
+
+    footer {
+        right: auto;
+        top: 700px;
+        height: 80px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .inputText {
+        font-size: 20px;
+        width: 70%;
+    }
+
+
+    .outputText {
+        display: flex;
+        font-size: 20px;
+
+        width: auto;
+        max-width: 80%;
+        height: 80px;
+
+        margin: 10px 0;
+    }
+
+    .frameAdvice {
+        width: 80%;
+        margin-bottom: 320px;
+        margin-left: auto;
+        top: 380px;
+    }
+
+    .frameButtons {
+        justify-content: space-between;
+        padding: 0px;
+        gap: 24px;
+
+        position: absolute;
+        width: 80%;
+        height: 67px;
+        bottom: auto;
+        margin: auto;
+        top: 400px;
+    }
+
+    button {
+        width: 140px;
+        height: auto;
+    }
+
+    .textButtonDark, .textButtonLight {
+        font-size: 16px;
+    }
+
+}

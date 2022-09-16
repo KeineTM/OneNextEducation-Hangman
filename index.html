@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Import Responsive CSS stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/Styles.css"/>
+    <!-- Media query properties -->
+    <link rel="stylesheet" media="screen and (max-width: 1089px)"/>
+
+    <!-- Javascript functions -->
+    <script type="text/javascript" src="js/functions.js"></script>
+    
+    <title>AHORCADO ALURA</title>
+</head>
+
+<header><br><center>Alura Challenge Sprint 02: Ahorcado</center></header>
+
+<body>
+
+    <!-- Main content -->
+    <main>
+
+        <!-- Alura's Logo -->
+        <div class="frameLogo" id="frameLogo">
+            <img src="img/Vector.png" alt="Logo Alura" width="31.09" height="44" class="logo">
+        </div>
+
+        <!-- Main menu -->
+        <article class="main-frame" id="main-frame">
+            <button class="dark" id="btn-iniciar">Iniciar juego</button>
+            <button class="light" id="btn-agregar">Agregar palabra</button>
+        </article>
+
+        <!-- Add a word menu -->
+        <article id="add-word-frame" style="display: none;">
+            <textarea class="input-text" id="input-word" cols="1" rows="6" placeholder="Ingrese su texto aquí" autofocus></textarea>
+            <section class="advice-frame">
+                <img src="img/alerta.png" alt="Aviso" id="img-alerta">
+                <p class="advice">Máx. 1 palabra de 8 letras</p>
+            </section>
+            <button class="dark" id="btn-guardar-y-empezar">Guardar y empezar</button>
+            <button class="light" id="btn-cancelar">Cancelar</button>
+        </article>
+
+        <!-- Hangman game -->
+        <article id="hangman-game" style="display: none;">
+            <canvas id="canvas-game"></canvas>
+            <button class="dark" id="btn-nuevo-juego">Nuevo juego</button>
+            <button class="light" id="btn-desistir">Desistir</button>
+        </article>
+
+    </main>    
+    
+    <!-- Footer with contact information -->
+    <footer>
+        <p>
+            Jessica Trejo Méndez<br>
+            © Septiembre 2022
+        </p>
+        <p>
+            Contacto: <br>
+            <a href="https://github.com/KeineTM"><img src="img/GitHub-Logo.png" alt="GitHub Account" width="50" ></a> | <a href="https://www.linkedin.com/in/jessica-tm/"><img src="img/pngwing.com.png" alt="LinkedIn Account" width="20" ></a>
+        </p>
+        <p>
+            Challenge ONE Principiante en programación G3 ONE
+        </p>
+    </footer>
+
+</body>
+</html>
