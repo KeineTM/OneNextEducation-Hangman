@@ -10,9 +10,6 @@
     <!-- Media query properties -->
     <link rel="stylesheet" media="screen and (max-width: 1089px)"/>
 
-    <!-- Javascript functions -->
-    <script type="text/javascript" src="js/functions.js"></script>
-    
     <title>AHORCADO ALURA</title>
 </head>
 
@@ -36,10 +33,10 @@
 
         <!-- Add a word menu -->
         <article id="add-word-frame" style="display: none;">
-            <textarea class="input-text" id="input-word" cols="1" rows="6" placeholder="Ingrese su texto aquí" autofocus></textarea>
+            <textarea class="input-text" id="input-word" cols="1" rows="6" placeholder="Ingrese palabra aquí"></textarea>
             <section class="advice-frame">
                 <img src="img/alerta.png" alt="Aviso" id="img-alerta">
-                <p class="advice">Máx. 1 palabra de 8 letras</p>
+                <p class="advice">Máx. 1 palabra de 10 letras</p>
             </section>
             <button class="dark" id="btn-guardar-y-empezar">Guardar y empezar</button>
             <button class="light" id="btn-cancelar">Cancelar</button>
@@ -47,9 +44,12 @@
 
         <!-- Hangman game -->
         <article id="play-game-frame" style="display: none;">
-            <canvas id="canvas-game"></canvas>
-            <button class="dark" id="btn-nuevo-juego">Nuevo juego</button>
-            <button class="light" id="btn-desistir">Desistir</button>
+            <!-- Canvas for game -->
+            <canvas id="canvas-game" width="700px" height="450px"></canvas>
+            <section class="buttons-game">
+                <button class="dark" id="btn-nuevo-juego">Nuevo juego</button>
+                <button class="light" id="btn-desistir">Desistir</button>
+            </section>
         </article>
 
     </main>    
@@ -69,5 +69,7 @@
         </p>
     </footer>
 
+    <!-- Javascript functions -->
+    <script type="text/javascript" src="js/functions.js"></script>
 </body>
 </html>

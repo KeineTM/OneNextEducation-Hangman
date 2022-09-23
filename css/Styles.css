@@ -173,12 +173,21 @@ textarea {
     margin: 8px;
 }
 
-canvas {
+#play-game-frame {
+
+}
+
+#canvas-game {
     display: block;
-    width: 545px;
-    height: 500px;
     margin-bottom: 1rem;
-    background-color: white;
+}
+
+.buttons-game {
+    
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    bottom: 1rem;
 }
 
 @media screen and (max-width: 1089px) {
