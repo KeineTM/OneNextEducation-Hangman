@@ -263,8 +263,6 @@ const saveAndPlay = () => {
 
     // Clear input
     newWord.value = "";
-
-    console.log(wordList); // List result
 }
 
 /* -------------------------------------------------------------------*/

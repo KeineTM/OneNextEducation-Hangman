@@ -108,8 +108,7 @@ button:hover {
     width: 300px;
     height: 120px;
     font-size: 22px;
-    line-height: 50px;
-    
+    line-height: 50px; 
 }
 
 /* Center Button's frame */
@@ -120,37 +119,21 @@ button:hover {
     gap: 20px;
 }
 
-/* ----- Text area ----- */
-textarea {
-    width: 100%;
+/* ----- Input ----- */
+input {
+    width: 90%;
     border: none;
     outline: none;
     resize: none;
     display: block;
-    margin-bottom: 4rem;
-}
+    margin-bottom: 6rem;
 
-/* ----- Input Text ----- */
-.input-text {
     font-family: 'Inter';
     font-size: 30px;
     line-height: 150%;
 
     color: #0A3871;
     background-color: #F3F5FC;
-}
-
-
-/* ----- Output Text ----- */
-.output-text {
-    width: 80%;
-    height: 65%;
-
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 150%;
-
-    color: #495057;
 }
 
 /* ----- Frame for advice message ----- */
@@ -174,7 +157,7 @@ textarea {
 }
 
 #play-game-frame {
-
+    flex-direction: column;
 }
 
 #canvas-game {
@@ -191,70 +174,63 @@ textarea {
 }
 
 @media screen and (max-width: 1089px) {
-    body {
-        margin-bottom: 0px;
-        display: flex;
-        justify-content: center;
-    }
-
     header {
-        font-size: 10px;
-    }
-
-    footer {
-        right: auto;
-        top: 700px;
-        height: 80px;
-    }
-
-    footer p {
+        height: auto;
         font-size: 12px;
     }
 
-    .inputText {
-        font-size: 20px;
-        width: 70%;
-    }
-
-
-    .outputText {
-        display: flex;
-        font-size: 20px;
-
-        width: auto;
-        max-width: 80%;
-        height: 80px;
-
-        margin: 10px 0;
-    }
-
-    .frameAdvice {
-        width: 80%;
-        margin-bottom: 320px;
-        margin-left: auto;
-        top: 380px;
-    }
-
-    .frameButtons {
-        justify-content: space-between;
-        padding: 0px;
-        gap: 24px;
-
+    .frameLogo {
         position: absolute;
-        width: 80%;
-        height: 67px;
-        bottom: auto;
-        margin: auto;
-        top: 400px;
+        left: 0px;
+        top: 10px;
+    }
+
+    main {
+        position: relative;
+        min-height: 450px;
+        bottom: 0;
+    }
+    
+    footer {
+        position: relative;
+        display: block;
+        height: 150px;
+    }
+
+    footer p {
+        font-size: 11px;
     }
 
     button {
-        width: 140px;
-        height: auto;
-    }
-
-    .textButtonDark, .textButtonLight {
+        padding: 15px;
         font-size: 16px;
+        gap: 0;
+        margin-bottom: 10px;
     }
 
+    #play-game-frame {
+        position: relative;
+        bottom: 1px;
+    }
+
+    #canvas-game {
+        margin: 0;
+        aspect-ratio: 350/200;
+    }
+
+    .buttons-game {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        bottom: 0;
+    }
+
+    #add-word-frame {
+        width: 270px;
+    }
+
+    input {
+        width: 270px;
+        font-size: 25px;
+    }
 }
